@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predictions: </title>
+</head>
+<body style="background-color: rgb(245, 245, 245)">
+<h2>Your Input:</h2>
+<p style="font-family: Arial">Age: {{age}}</p>
+<p style="font-family: Arial"> Gender: {{gender}}</p>
+<p style = "font-family: Arial">Pre-existing conditions: {{condition}}</p>
+<p style = "font-family: Arial">Lab Confirmed: {{lab_confirmed}}</p>
+<h2>Predictions:</h2>
+
+<div style="font-family: Arial">Probability of hospitalization ~ {{hosp_probability}}%</div>
+<hr>
+<div style="font-family: Arial">Probability of ICU without hospitalization ~ {{icu_probability_1}}%</div>
+<hr>
+<div style="font-family: Arial">Probability of ICU with hospitalization ~ {{icu_probability_2}}%</div>
+<hr>
+<div style="font-family: Arial">Probability of death without hospitalization or ICU ~ {{death_probability_1}}%
+</div>
+<hr>
+<div style="font-family: Arial">Probability of death with hospitalization but without ICU ~
+    {{death_probability_2}}%
+</div>
+<hr>
+<div style="font-family: Arial">Probability of death with hospitalization and ICU ~ {{death_probability_3}}%</div>
+<hr>
+
+
+<a href="/" style="font-family: Arial"><b>Back to form</b></a>
+</body>
+</html>

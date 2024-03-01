@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Covid Form</title>
+</head>
+<body>
+<h1>Please select the following options to predict the probability for hospitalization, ICU and death by COVID-19.</h1>
+<form method="Post" action="/result">
+    <div>Lab confirmed case?</div>
+    <div>
+        <input type="radio" id="confirmed" name="confirmed" value="1" checked/>
+        <label for="yes">Yes</label>
+        <input type="radio" id="not confirmed" name="confirmed" value="0"/>
+        <label for="no">No</label>
+    </div>
+    <br>
+    <div><label>Gender</label></div>
+    <div>
+        <input type="radio" id="female" name="gender" value="0"/>
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="1" checked/>
+        <label for="male">Male</label>
+    </div>
+    <br>
+    <div><label>Age</label></div>
+    <div>
+        <input type="radio" id="0-9" name="age" value="1"/>
+        <label for="0-9">0-9</label>
+        <input type="radio" id="10-19" name="age" value="2"/>
+        <label for="10-19">10-19</label>
+        <input type="radio" id="20-29" name="age" value="3"/>
+        <label for="20-29">20-29</label>
+        <input type="radio" id="30-39" name="age" value="4"/>
+        <label for="30-39">30-39</label>
+        <input type="radio" id="40-49" name="age" value="5"/>
+        <label for="40-49">40-49</label>
+        <input type="radio" id="50-59" name="age" value="6"/>
+        <label for="50-59">50-59</label>
+        <input type="radio" id="60-69" name="age" value="7"/>
+        <label for="60-69">60-69</label>
+        <input type="radio" id="70-79" name="age" value="8" checked/>
+        <label for="70-79">70-79</label>
+        <input type="radio" id="85+" name="age" value="9"/>
+        <label for="85+">85+</label>
+    </div>
+    <br>
+    <div><label>Pre-existing conditions?</label></div>
+    <div>
+        <input type="radio" id="yes" name="condition" value="1"/>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="condition" value="0" checked/>
+        <label for="no">No</label>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Predict">
+    </div>
+</form>
+</body>
+
+</html>
